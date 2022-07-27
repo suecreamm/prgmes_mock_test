@@ -13,14 +13,11 @@ def solution(order):
         if len(q) == 0:
             break
         if i == q[0]:
-
             previous_item = q.popleft()
             result += 1
 
             if sub_searching(q, sub, max_q) == 0:
                 continue
-                ######## break 했을때는 안됐음
-                ######## 내가 만든 테스트 케이스는 통과됐음. 먼 차이?
             else:
                 sub_searching(q, sub, max_q)
         else:
@@ -42,6 +39,3 @@ def sub_searching(queue, sub_li, N):
     else:
         return 0
     return N
-
-
-print(solution([1, 2, 3, 4, 5]))
