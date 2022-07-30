@@ -62,8 +62,8 @@ def solution(beginning, target):
     #if cnt == m+n:
         #return -1
     # 너무 모르겠음
-    for i in range(m):
-        for j in range(n):
+    for i in range(-1, m):              ### -1로 안 뒤집는 걸 생각 해놨는데 막상 뒤집으라고 할 때에는 그걸 생각을 안 함
+        for j in range(-1, n):
             print(i, j)
             target_loop = invert_arr(target_inv, i, j, cnt)
             cnt += 1
