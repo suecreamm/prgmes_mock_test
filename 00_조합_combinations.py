@@ -10,12 +10,13 @@ def dfs(d, l, cnt):
         combi_result.append(d)
         return combi_result
     for i in l:
+        ind = l.index(i)
         down = d[:]
         down.append(i)
         l1 = l[:]
         l1.remove(i)
-        for j in range(i):
-            try: l1.remove(j)
+        for j in range(ind):
+            try: l1.remove(l[j])
             except ValueError: continue
         print(down, l1)
         dfs(down, l1, cnt+1)
