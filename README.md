@@ -31,7 +31,7 @@
 - 모든 경우에 대해서 다 뒤집는 게 안 됨 -> 순열, 조합 연습 
 
 
-#### test files라고 했지만 연습장 겸 
+#### test files라고 했지만 연습장 겸 쓰레기통
 - 1st_prob3_z_trash_01.py
 - 1st_prob3_z_trash_01debugging.py
 - z_01_prob1_test.ipynb
